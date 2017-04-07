@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"minify",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "minify",
+    "description": "api documentation for [minify (v2.0.13)](http://coderaiser.github.io/minify) [![npm package](https://img.shields.io/npm/v/npmdoc-minify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-minify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-minify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-minify)",
     "devDependencies": {
-        "minify": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "minify": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-minify",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-minify",
+    "keywords": [
+        "documentation",
+        "minify"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_minify.js",
+    "name": "npmdoc-minify",
+    "nameAlias": "npmdoc_minify",
+    "nameOriginal": "npmdoc-minify",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-minify"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
