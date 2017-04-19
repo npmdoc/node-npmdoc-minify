@@ -1,9 +1,14 @@
-# api documentation for  [minify (v2.0.13)](http://coderaiser.github.io/minify)  [![npm package](https://img.shields.io/npm/v/npmdoc-minify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-minify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-minify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-minify)
+# npmdoc-minify
+
+#### api documentation for  [minify (v2.0.13)](http://coderaiser.github.io/minify)  [![npm package](https://img.shields.io/npm/v/npmdoc-minify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-minify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-minify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-minify)
+
 #### Minifier of js, css, html and img
 
-[![NPM](https://nodei.co/npm/minify.png?downloads=true)](https://www.npmjs.com/package/minify)
+[![NPM](https://nodei.co/npm/minify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/minify)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-minify/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-minify_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-minify/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-minify/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-minify/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-minify/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-minify/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-minify/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "coderaiser",
-        "email": "mnemonic.enemy@gmail.com",
         "url": "https://github.com/coderaiser"
     },
     "bin": {
@@ -67,13 +71,11 @@
     "main": "lib/minify",
     "maintainers": [
         {
-            "name": "coderaiser",
-            "email": "mnemonic.enemy@gmail.com"
+            "name": "coderaiser"
         }
     ],
     "name": "minify",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/coderaiser/minify.git"
@@ -87,118 +89,6 @@
     },
     "version": "2.0.13"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module minify](#apidoc.module.minify)
-1.  [function <span class="apidocSignatureSpan">minify.</span>css (data, callback)](#apidoc.element.minify.css)
-1.  [function <span class="apidocSignatureSpan">minify.</span>html (data, callback)](#apidoc.element.minify.html)
-1.  [function <span class="apidocSignatureSpan">minify.</span>img (name, data, callback)](#apidoc.element.minify.img)
-1.  [function <span class="apidocSignatureSpan">minify.</span>js (data, callback)](#apidoc.element.minify.js)
-
-
-
-# <a name="apidoc.module.minify"></a>[module minify](#apidoc.module.minify)
-
-#### <a name="apidoc.element.minify.css"></a>[function <span class="apidocSignatureSpan">minify.</span>css (data, callback)](#apidoc.element.minify.css)
-- description and source-code
-```javascript
-css = function (data, callback) {
-    var error, errorParse, dataOptimized;
-
-    assert(data);
-    assert(callback);
-
-    if (!Clean)
-        error   = ErrorMsg;
-    else
-        error   = tryCatch(function() {
-            var min         = new Clean().minify(data);
-            dataOptimized   = min.styles;
-            errorParse      = min.errors[0];
-        });
-
-    callback(error || errorParse, dataOptimized);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.minify.html"></a>[function <span class="apidocSignatureSpan">minify.</span>html (data, callback)](#apidoc.element.minify.html)
-- description and source-code
-```javascript
-html = function (data, callback) {
-    var error;
-
-    assert(data);
-    assert(callback);
-
-    if (!Minifier)
-        error   = ErrorMsg;
-    else
-        error   = tryCatch(function() {
-            data = Minifier.minify(data, Options);
-        });
-
-    callback(error, data);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.minify.img"></a>[function <span class="apidocSignatureSpan">minify.</span>img (name, data, callback)](#apidoc.element.minify.img)
-- description and source-code
-```javascript
-img = function (name, data, callback) {
-    var dir         = path.dirname(name),
-        dirRelative = dir + '/../';
-
-    assert(name);
-    assert(data);
-    assert(callback);
-
-    if (!B64img)
-        callback(ErrorMsg);
-    else
-        B64img.fromString(data, dir, dirRelative, OPTIONS, function(error, css) {
-            callback(null, css);
-        });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.minify.js"></a>[function <span class="apidocSignatureSpan">minify.</span>js (data, callback)](#apidoc.element.minify.js)
-- description and source-code
-```javascript
-js = function (data, callback) {
-    var error, dataOptimized;
-
-    assert(data);
-    assert(callback);
-
-    if (!uglify)
-        error = ErrorMsg;
-    else
-        error = tryCatch(function() {
-            dataOptimized = uglify.minify(data, {fromString: true}).code;
-        });
-
-    callback(error, dataOptimized);
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
