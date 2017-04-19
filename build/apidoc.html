@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.minify.minify">
+            function <span class="apidocSignatureSpan"></span>minify
+            <span class="apidocSignatureSpan">(name, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.minify.css">
             function <span class="apidocSignatureSpan">minify.</span>css
             <span class="apidocSignatureSpan">(data, callback)</span>
@@ -103,6 +112,65 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.minify" id="apidoc.module.minify">module minify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.minify.minify" id="apidoc.element.minify.minify">
+        function <span class="apidocSignatureSpan"></span>minify
+        <span class="apidocSignatureSpan">(name, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function minify(name, options, callback) {
+    var ret, ext, is,
+        ERROR_MSG   = &#x27;File type &#x22;{{ ext }}&#x22; not supported.&#x27;,
+        EXT         = [&#x27;js&#x27;, &#x27;html&#x27;, &#x27;css&#x27;];
+
+    if (!callback)
+        callback = options;
+
+    check(name, callback);
+
+    ext         = path.extname(name).slice(1);
+    is          = ~EXT.indexOf(ext);
+
+    if (!is)
+        callback(Error(rendy(ERROR_MSG, {
+            ext: ext
+        })));
+    else
+        tomas.check(name, function(is) {
+            exec.if(is, function() {
+                tomas.read(name, options, callback);
+            }, function(fn) {
+                log(&#x27;optimizing &#x27; + path.basename(name));
+                optimize(name, function(error) {
+                    !error ? fn() : callback(error);
+                });
+            });
+        });
+
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        assert(data);
+        assert(callback);
+
+        if (!Clean)
+            error   = ErrorMsg;
+        else
+            error   = tryCatch(function() {
+                var min         = new Clean().<span class="apidocCodeKeywordSpan">minify</span>(data);
+                dataOptimized   = min.styles;
+                errorParse      = min.errors[0];
+            });
+
+        callback(error || errorParse, dataOptimized);
+    };
+})();
+...</pre></li>
+    </ul>
+
 
 
     <h2>

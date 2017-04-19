@@ -1,56 +1,58 @@
-<svg height="846" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="846" fill="#555" width="720"></rect>
+<svg height="878" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="878" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">7 megabytes</tspan>
-<tspan x="10" y="42">└─┬ minify@2.0.13 </tspan>
-<tspan x="10" y="58">  ├─┬ clean-css@3.4.25 </tspan>
-<tspan x="10" y="74">  │ ├─┬ commander@2.8.1 </tspan>
-<tspan x="10" y="90">  │ │ └── graceful-readlink@1.0.1 </tspan>
-<tspan x="10" y="106">  │ └─┬ source-map@0.4.4 </tspan>
-<tspan x="10" y="122">  │   └── amdefine@1.0.1 </tspan>
-<tspan x="10" y="138">  ├── css-b64-images@0.2.5 </tspan>
-<tspan x="10" y="154">  ├─┬ debug@2.6.3 </tspan>
-<tspan x="10" y="170">  │ └── ms@0.7.2 </tspan>
-<tspan x="10" y="186">  ├── execon@1.2.9 </tspan>
-<tspan x="10" y="202">  ├─┬ html-minifier@3.4.2 </tspan>
-<tspan x="10" y="218">  │ ├─┬ camel-case@3.0.0 </tspan>
-<tspan x="10" y="234">  │ │ ├─┬ no-case@2.3.1 </tspan>
-<tspan x="10" y="250">  │ │ │ └── lower-case@1.1.4 </tspan>
-<tspan x="10" y="266">  │ │ └── upper-case@1.1.3 </tspan>
-<tspan x="10" y="282">  │ ├─┬ clean-css@4.0.11 </tspan>
-<tspan x="10" y="298">  │ │ └── source-map@0.5.6 </tspan>
-<tspan x="10" y="314">  │ ├── commander@2.9.0 </tspan>
-<tspan x="10" y="330">  │ ├── he@1.1.1 </tspan>
-<tspan x="10" y="346">  │ ├─┬ ncname@1.0.0 </tspan>
-<tspan x="10" y="362">  │ │ └── xml-char-classes@1.0.0 </tspan>
-<tspan x="10" y="378">  │ ├── param-case@2.1.1 </tspan>
-<tspan x="10" y="394">  │ └── relateurl@0.2.7 </tspan>
-<tspan x="10" y="410">  ├── rendy@1.1.0 </tspan>
-<tspan x="10" y="426">  ├─┬ tomas@1.0.2 </tspan>
-<tspan x="10" y="442">  │ ├── checkup@1.3.0 </tspan>
-<tspan x="10" y="458">  │ ├─┬ ischanged@1.0.18 </tspan>
-<tspan x="10" y="474">  │ │ ├── readjson@1.1.3 </tspan>
-<tspan x="10" y="490">  │ │ ├── timem@1.1.2 </tspan>
-<tspan x="10" y="506">  │ │ └── writejson@1.1.1 </tspan>
-<tspan x="10" y="522">  │ └─┬ mkdirp@0.5.1 </tspan>
-<tspan x="10" y="538">  │   └── minimist@0.0.8 </tspan>
-<tspan x="10" y="554">  ├── try-catch@1.0.0 </tspan>
-<tspan x="10" y="570">  └─┬ uglify-js@2.8.21 </tspan>
-<tspan x="10" y="586">    ├── source-map@0.5.6 </tspan>
-<tspan x="10" y="602">    ├── uglify-to-browserify@1.0.2 </tspan>
-<tspan x="10" y="618">    └─┬ yargs@3.10.0 </tspan>
-<tspan x="10" y="634">      ├── camelcase@1.2.1 </tspan>
-<tspan x="10" y="650">      ├─┬ cliui@2.1.0 </tspan>
-<tspan x="10" y="666">      │ ├─┬ center-align@0.1.3 </tspan>
-<tspan x="10" y="682">      │ │ ├─┬ align-text@0.1.4 </tspan>
-<tspan x="10" y="698">      │ │ │ ├─┬ kind-of@3.1.0 </tspan>
-<tspan x="10" y="714">      │ │ │ │ └── is-buffer@1.1.5 </tspan>
-<tspan x="10" y="730">      │ │ │ ├── longest@1.0.1 </tspan>
-<tspan x="10" y="746">      │ │ │ └── repeat-string@1.6.1 </tspan>
-<tspan x="10" y="762">      │ │ └── lazy-cache@1.0.4 </tspan>
-<tspan x="10" y="778">      │ ├── right-align@0.1.3 </tspan>
-<tspan x="10" y="794">      │ └── wordwrap@0.0.2 </tspan>
-<tspan x="10" y="810">      ├── decamelize@1.2.0 </tspan>
-<tspan x="10" y="826">      └── window-size@0.1.0</tspan>
+<tspan x="10" y="26">7 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ minify@2.0.13 </tspan>
+<tspan x="10" y="90">  ├─┬ clean-css@3.4.25 </tspan>
+<tspan x="10" y="106">  │ ├─┬ commander@2.8.1 </tspan>
+<tspan x="10" y="122">  │ │ └── graceful-readlink@1.0.1 </tspan>
+<tspan x="10" y="138">  │ └─┬ source-map@0.4.4 </tspan>
+<tspan x="10" y="154">  │   └── amdefine@1.0.1 </tspan>
+<tspan x="10" y="170">  ├── css-b64-images@0.2.5 </tspan>
+<tspan x="10" y="186">  ├─┬ debug@2.6.3 </tspan>
+<tspan x="10" y="202">  │ └── ms@0.7.2 </tspan>
+<tspan x="10" y="218">  ├── execon@1.2.9 </tspan>
+<tspan x="10" y="234">  ├─┬ html-minifier@3.4.3 </tspan>
+<tspan x="10" y="250">  │ ├─┬ camel-case@3.0.0 </tspan>
+<tspan x="10" y="266">  │ │ ├─┬ no-case@2.3.1 </tspan>
+<tspan x="10" y="282">  │ │ │ └── lower-case@1.1.4 </tspan>
+<tspan x="10" y="298">  │ │ └── upper-case@1.1.3 </tspan>
+<tspan x="10" y="314">  │ ├─┬ clean-css@4.0.12 </tspan>
+<tspan x="10" y="330">  │ │ └── source-map@0.5.6 </tspan>
+<tspan x="10" y="346">  │ ├── commander@2.9.0 </tspan>
+<tspan x="10" y="362">  │ ├── he@1.1.1 </tspan>
+<tspan x="10" y="378">  │ ├─┬ ncname@1.0.0 </tspan>
+<tspan x="10" y="394">  │ │ └── xml-char-classes@1.0.0 </tspan>
+<tspan x="10" y="410">  │ ├── param-case@2.1.1 </tspan>
+<tspan x="10" y="426">  │ └── relateurl@0.2.7 </tspan>
+<tspan x="10" y="442">  ├── rendy@1.1.0 </tspan>
+<tspan x="10" y="458">  ├─┬ tomas@1.0.2 </tspan>
+<tspan x="10" y="474">  │ ├── checkup@1.3.0 </tspan>
+<tspan x="10" y="490">  │ ├─┬ ischanged@1.0.18 </tspan>
+<tspan x="10" y="506">  │ │ ├── readjson@1.1.3 </tspan>
+<tspan x="10" y="522">  │ │ ├── timem@1.1.2 </tspan>
+<tspan x="10" y="538">  │ │ └── writejson@1.1.1 </tspan>
+<tspan x="10" y="554">  │ └─┬ mkdirp@0.5.1 </tspan>
+<tspan x="10" y="570">  │   └── minimist@0.0.8 </tspan>
+<tspan x="10" y="586">  ├── try-catch@1.0.0 </tspan>
+<tspan x="10" y="602">  └─┬ uglify-js@2.8.22 </tspan>
+<tspan x="10" y="618">    ├── source-map@0.5.6 </tspan>
+<tspan x="10" y="634">    ├── uglify-to-browserify@1.0.2 </tspan>
+<tspan x="10" y="650">    └─┬ yargs@3.10.0 </tspan>
+<tspan x="10" y="666">      ├── camelcase@1.2.1 </tspan>
+<tspan x="10" y="682">      ├─┬ cliui@2.1.0 </tspan>
+<tspan x="10" y="698">      │ ├─┬ center-align@0.1.3 </tspan>
+<tspan x="10" y="714">      │ │ ├─┬ align-text@0.1.4 </tspan>
+<tspan x="10" y="730">      │ │ │ ├─┬ kind-of@3.1.0 </tspan>
+<tspan x="10" y="746">      │ │ │ │ └── is-buffer@1.1.5 </tspan>
+<tspan x="10" y="762">      │ │ │ ├── longest@1.0.1 </tspan>
+<tspan x="10" y="778">      │ │ │ └── repeat-string@1.6.1 </tspan>
+<tspan x="10" y="794">      │ │ └── lazy-cache@1.0.4 </tspan>
+<tspan x="10" y="810">      │ ├── right-align@0.1.3 </tspan>
+<tspan x="10" y="826">      │ └── wordwrap@0.0.2 </tspan>
+<tspan x="10" y="842">      ├── decamelize@1.2.0 </tspan>
+<tspan x="10" y="858">      └── window-size@0.1.0</tspan>
 </text>
 </svg>
